@@ -64,6 +64,13 @@ To set a UserId:
 To enable verbose logging:
 * `window.analytics.debugMode()`
 
+To toggle opt out (calling startTrackerWithId will toggle off again):
+* `window.analytics.trackingOptOut()`
+
+To stop tracking after startTrackerWithId() called (iOS only for now):
+* `window.analytics.stopTracking()`
+
+
 #Installing Without the CLI <a name="nocli"></a>
 Copy the files manually into your project and add the following to your config.xml files:
 ```xml
